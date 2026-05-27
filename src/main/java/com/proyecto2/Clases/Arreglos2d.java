@@ -16,7 +16,7 @@ public class Arreglos2d {
                 System.out.println("Matriz interna "+i+" "+j+": "+numeros[i][j]);
                //System.out.print(numeros[i][j]+" ");
             }
-            //System.out.println();
+            //System.out.println(); 
         }
     }
 }

@@ -8,6 +8,7 @@ public abstract class ClaseA {
     protected int ancho;
     protected int altura;
 
+
     protected ArrayList<Integer> memoria=new ArrayList<>();
 
     public ClaseA(int largo, int ancho, int altura) {

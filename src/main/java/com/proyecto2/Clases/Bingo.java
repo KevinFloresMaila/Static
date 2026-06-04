@@ -2,8 +2,18 @@ package com.proyecto2.Clases;
 import java.util.Scanner;
 public class Bingo {
     public static void main(String[] args) {
+        int min=3;
+        int max=5;
+        
+        int randomNum = (int) (Math.random() * ( max - min + 1)) + min;
+
         String[][] bingo;
-        bingo =new String [5][5];
+        bingo =new String [5][];
+
+       for(int i=0;i<bingo.length;i++){
+        bingo[i]=new String[randomNum];
+       }
+
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < bingo.length; i++) {
             for (int j = 0; j < bingo[i].length; j++) {
@@ -19,11 +29,16 @@ public class Bingo {
             System.out.println();
         }
         while (true) {
-            System.out.println("Ingrese una fila (del 1 al 5): ");
-            int fila = sc.nextInt()-1;
-
-            System.out.println("Ingrese una columna (del 1 al 5): ");
-            int columna = sc.nextInt()-1;
+            for(int i=0;i<bingo.length; i++){
+                for (int j = 0; j < bingo.length; j++) {
+                    String aux = sc.nextLine();
+                    if (aux == bingo[i][j]) {
+                        
+                    } else {
+                        
+                    }
+                }
+            }
 
             bingo[fila][columna] = "X";
 

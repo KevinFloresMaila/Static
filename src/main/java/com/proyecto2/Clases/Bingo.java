@@ -32,15 +32,13 @@ public class Bingo {
             for(int i=0;i<bingo.length; i++){
                 for (int j = 0; j < bingo.length; j++) {
                     String aux = sc.nextLine();
-                    if (aux == bingo[i][j]) {
+                    if (aux==bingo[i][j]) {
                         
                     } else {
                         
                     }
                 }
             }
-
-            bingo[fila][columna] = "X";
 
             for (int i = 0; i < bingo.length; i++) {
                 for (int j = 0; j < bingo[i].length; j++) {

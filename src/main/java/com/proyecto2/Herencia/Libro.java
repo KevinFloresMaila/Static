@@ -15,7 +15,7 @@ public class Libro extends Recurso {
 
     @Override
     public void mostrarFichaTecnica() {
-        super.mostrarFichaTecnica();
+        super.getInfo();
         System.out.println("Número de páginas: " + numeroPaginas);
     }
 

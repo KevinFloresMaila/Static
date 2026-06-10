@@ -1,16 +1,11 @@
 package com.proyecto2.Herencia;
 import lombok.Getter;
-import lombok.Setter;
 public abstract class Recurso {
     
     @Getter 
     private String id;
-    @Getter 
-    @Setter
-    private String titulo;
-    @Getter 
-    @Setter
-    private boolean disponible;
+    protected String titulo;
+    protected boolean disponible;
 
 
     public Recurso(String id, String titulo, boolean disponible) {
@@ -19,11 +14,18 @@ public abstract class Recurso {
         this.disponible = disponible;
     }
 
-    public void mostrarFichaTecnica() {
+    public abstract void  mostrarFichaTecnica();
+
+    protected void getInfo() {
         System.out.println("ID: " + id);
         System.out.println("Título: " + titulo);
         System.out.println("Disponible: " + (disponible ? "Sí" : "No"));
     }
+
+    public static void imprimir(){
+        System.out.println("Hola");
+    }
+
 
 
 

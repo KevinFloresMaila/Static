@@ -11,7 +11,6 @@ public class Digital extends Recurso {
     
     @Override
     public void mostrarFichaTecnica() {
-        super.mostrarFichaTecnica();
         System.out.println("URL: " + url);
     }
 }

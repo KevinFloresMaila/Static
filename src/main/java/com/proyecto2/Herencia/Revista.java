@@ -11,7 +11,6 @@ public class Revista extends Recurso {
 
     @Override
     public void mostrarFichaTecnica() {
-        super.mostrarFichaTecnica();
         System.out.println("Periodicidad: " + periodicidad);
     }
     

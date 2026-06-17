@@ -1,32 +1,32 @@
 package com.Pagos;
-
+import com.Pagos.Carrito.Carrito;
 public class Main {
     public static void main(String[] args) {
-        Transferencia transferencia = new Transferencia(
-            "1234567890", 
-            "Banco XYZ", 
-            "0987654321");
-        transferencia.pagar(100.0);
-        System.out.println(transferencia.imprimirRecibo(100.0));
 
-        System.out.println("--------------------------------------------------");
+        Carrito carrito=new Carrito();
+        carrito.agregarItem("Laptop", 1500.0);
+        carrito.agregarItem("Smartphone", 100.0);  
+        
+        carrito.mostarItems();
+        System.out.println("Total a pagar: $" + carrito.calcularTotal());
 
-        TarjetaCredito tarjetaCredito = new TarjetaCredito(
-            "1234567812345678", 
-            "Juan Perez", 
-            "12/25", 
-            "123");
-        tarjetaCredito.pagar(2500.0);
-        System.out.println(tarjetaCredito.imprimirRecibo(2500.0));
+        MetodoPago tarjetaCredito=new TarjetaCredito("1234567891234567","Juan Perez","11/27", "213");
 
-            System.out.println("--------------------------------------------------");
-
-        CarritoCompras[] carrito = new CarritoCompras[3];
-        carrito[0] = new CarritoCompras("Producto 1", 100);
-        carrito[1] = new CarritoCompras("Producto 2", 200);
-        carrito[2] = new CarritoCompras("Producto 3", 300);
+        carrito.pagar(tarjetaCredito);
 
 
 
-    }
+
+
+
+
+
+        
+        /*carrito.pagarConTarjetaCredito(
+            "1234567890123456",
+        "Juan Perez",
+        "12/15",
+        "123");*/
+        
+}
 }

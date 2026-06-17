@@ -32,7 +32,7 @@ public class TarjetaCredito implements MetodoPago {
     }
 
     public String imprimirRecibo(double monto) {
-        return "Recibo de Tarjeta de Crédito: Monto pagado: " + monto + "Con tarjeta número: " + numeroTarjeta+" a nombre de: " + nombreTitular;
+        return "Recibo de Tarjeta de Crédito: Monto pagado: " + monto + " Con tarjeta número: " + numeroTarjeta+" a nombre de: " + nombreTitular;
     }
 
     private boolean validarTarjeta() {

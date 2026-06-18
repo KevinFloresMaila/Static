@@ -5,7 +5,7 @@ public class Main {
 
         Carrito carrito=new Carrito();
         carrito.agregarItem("Laptop", 1500.0);
-        carrito.agregarItem("Smartphone", 100.0);  
+        carrito.agregarItem("Smartphone", 100.0);
         
         carrito.mostarItems();
         System.out.println("Total a pagar: $" + carrito.calcularTotal());

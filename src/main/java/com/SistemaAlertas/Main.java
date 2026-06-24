@@ -13,6 +13,18 @@ public class Main {
         String mensaje = "Hola, este es un mensaje de prueba.";
 
         notificador.enviarAlertas(destinatario, mensaje);
+
+
+
+        Notificacion recordatorio=new Recordatorio();
+            recordatorio.alerta(" ", "");
+
+        Recordatorio recordatorio1=(Recordatorio) recordatorio;
+        recordatorio1.nuevaAlerta();
+        recordatorio.verificarConexion();
+
+
+
     }
 
 }

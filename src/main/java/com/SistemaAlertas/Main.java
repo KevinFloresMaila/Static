@@ -10,7 +10,7 @@ public class Main {
         notificador.agregarNotificacion(new App());
 
         String destinatario = "usuario123";
-        String mensaje = "Hola, este es un mensaje de prueba.";
+        String mensaje = "Retiro exitoso de $500";
 
         notificador.enviarAlertas(destinatario, mensaje);
 
